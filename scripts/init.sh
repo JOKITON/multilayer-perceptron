@@ -33,17 +33,17 @@ else
 		# Activate the virtual environment
 		source .venv/bin/activate
 		pip install --upgrade pip
-		pip install -r requirements_py3.12.txt
+		pip install -r requirements.txt
 	elif [ $os_choice -eq 2 ]; then
 		echo "You chose Windows/Linux."
 		# Activate the virtual environment
 		source .venv/bin/activate
 		pip install --upgrade pip
-		pip install -r requirements_py3.12.txt
+		pip install -r requirements.txt
     elif [ $os_choice -eq 3 ]; then
 		echo "You chose 42 Linux."
 		.venv/bin/pip install --upgrade pip
-		.venv/bin/pip install -r requirements_py3.9.txt
+		.venv/bin/pip install -r requirements.txt
 	else
 		echo "Invalid choice. Exiting."
 	fi
